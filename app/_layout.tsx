@@ -5,15 +5,15 @@ import { useColorScheme } from 'react-native';
 import 'react-native-reanimated';
 
 export default function RootLayout() {
-  const colorScheme = useColorScheme();
+	const colorScheme = useColorScheme();
 
-  return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-      </Stack>
+	return (
+		<ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+			<Stack>
+				<Stack.Screen name='(tabs)' options={{ headerShown: false }} />
+			</Stack>
 
-      <StatusBar style="auto" />
-    </ThemeProvider>
-  );
+			<StatusBar style='auto' />
+		</ThemeProvider>
+	);
 }
