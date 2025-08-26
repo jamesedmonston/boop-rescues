@@ -2,15 +2,18 @@ import { Aspect } from '@/components/ui/aspect';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Image } from '@/components/ui/image';
+import { RandomDots } from '@/components/ui/random-dots';
 import { Stack } from '@/components/ui/stack';
 import { Text } from '@/components/ui/text';
 import { View } from 'react-native';
 
 export default function Index() {
 	return (
-		<View className='flex-1 justify-center self-center'>
+		<View className='w-full flex-1 justify-center self-center'>
+			<RandomDots count={20} />
+
 			<Stack gap={6}>
-				<View className='w-[85vw]'>
+				<View className='mx-auto w-[85vw]'>
 					<Stack direction='row' gap={4}>
 						<View className='flex-1'>
 							<Card>

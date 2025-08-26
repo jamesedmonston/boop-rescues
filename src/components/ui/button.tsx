@@ -11,7 +11,7 @@ interface Props extends ComponentProps<typeof View> {
 
 export function Button({ href, className, children, ...props }: Props) {
 	const _className = classify([
-		'h-10 w-full items-center justify-center rounded-full bg-primary text-center text-base font-bold leading-10 text-white',
+		'h-12 w-full items-center justify-center rounded-full bg-primary text-center text-lg font-bold leading-[40px] text-white',
 		className,
 	]);
 
