@@ -39,7 +39,7 @@ export default function Index() {
 							Your dream dog is just{`\r\n`}a boop away
 						</Text>
 
-						<Text align='center' alpha='faded'>
+						<Text size='xl' align='center' alpha='faded'>
 							Because every dog deserves a forever home, and every person deserves to boop the
 							snoot.
 						</Text>
