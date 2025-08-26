@@ -7,16 +7,18 @@ interface Props extends ComponentProps<typeof RNText> {
 	color?: keyof typeof colors;
 	weight?: keyof typeof weights;
 	align?: keyof typeof aligns;
+	alpha?: keyof typeof alphas;
 	className?: string;
 }
 
-export function Text({ size = 'base', color, weight, align, className, ...props }: Props) {
+export function Text({ size = 'base', color, weight, align, alpha, className, ...props }: Props) {
 	const _className = classify([
 		'-my-1.5',
 		sizes[size],
 		color && colors[color],
 		weight && weights[weight],
 		align && aligns[align],
+		alpha && alphas[alpha],
 		className,
 	]);
 
@@ -50,4 +52,8 @@ const aligns = {
 	left: 'text-left',
 	center: 'text-center',
 	right: 'text-right',
+};
+
+const alphas = {
+	faded: 'opacity-60',
 };
