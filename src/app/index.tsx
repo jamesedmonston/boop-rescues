@@ -10,6 +10,8 @@ import { View } from 'react-native';
 export default function Index() {
 	return (
 		<View className='flex-1 items-center'>
+			<RandomDots count={20} />
+
 			<Image
 				className='top-safe absolute left-1/2 h-16 w-16 -translate-x-1/2 overflow-hidden rounded-3xl'
 				source={require('@/assets/icon.png')}
@@ -17,8 +19,6 @@ export default function Index() {
 			/>
 
 			<View className='flex-1 justify-center'>
-				<RandomDots count={20} />
-
 				<Stack gap={6}>
 					<View className='mx-auto w-[85vw]'>
 						<Stack direction='row' gap={4}>
