@@ -15,7 +15,7 @@ export default function Index() {
 			<Stack gap={6}>
 				<View className='mx-auto w-[85vw]'>
 					<Stack direction='row' gap={4}>
-						<View className='flex-1'>
+						<View className='flex-1 shadow-xl shadow-black/20'>
 							<Card>
 								<Aspect ratio={216 / 128}>
 									<Image source={require('@/assets/dog-1.jpg')} contentFit='cover' />
@@ -23,7 +23,7 @@ export default function Index() {
 							</Card>
 						</View>
 
-						<View className='flex-1'>
+						<View className='flex-1 shadow-xl shadow-black/20'>
 							<Card>
 								<Aspect ratio={216 / 128}>
 									<Image source={require('@/assets/dog-2.jpg')} contentFit='cover' />
