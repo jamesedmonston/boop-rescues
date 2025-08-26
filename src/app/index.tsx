@@ -35,7 +35,7 @@ export default function Index() {
 
 				<View className='w-[70vw] justify-center self-center'>
 					<Stack gap={6}>
-						<Text size='2xl' weight='bold' align='center'>
+						<Text size='3xl' weight='bold' align='center'>
 							Your dream dog is just{`\r\n`}a boop away
 						</Text>
 
