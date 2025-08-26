@@ -10,7 +10,7 @@ import { View } from 'react-native';
 export default function Index() {
 	return (
 		<View className='flex-1 items-center'>
-			<RandomDots count={20} />
+			<RandomDots count={30} />
 
 			<Image
 				className='top-safe absolute left-1/2 h-16 w-16 -translate-x-1/2 overflow-hidden rounded-3xl'
