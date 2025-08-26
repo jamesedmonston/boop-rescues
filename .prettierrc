@@ -5,5 +5,8 @@
 	"singleQuote": true,
 	"useTabs": true,
 	"tabWidth": 2,
-	"trailingComma": "all"
+	"trailingComma": "all",
+	"plugins": ["prettier-plugin-organize-imports", "prettier-plugin-tailwindcss"],
+	"tailwindFunctions": ["classify"],
+	"tailwindAttributes": ["classNames"]
 }

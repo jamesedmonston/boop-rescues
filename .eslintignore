@@ -1,0 +1,10 @@
+/.expo
+/node_modules
+/ios
+/android
+/dist
+/build
+/coverage
+/logs
+/temp
+/cache
