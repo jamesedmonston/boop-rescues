@@ -15,7 +15,7 @@ export default function Index() {
 			<RandomDots count={30} />
 
 			<Image
-				className='top-safe absolute left-1/2 h-16 w-16 -translate-x-1/2 overflow-hidden rounded-3xl'
+				className='top-safe absolute left-1/2 h-16 w-16 -translate-x-1/2 overflow-hidden rounded-2xl'
 				source={require('@/assets/icon.png')}
 				contentFit='contain'
 			/>
