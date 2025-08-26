@@ -1,10 +1,10 @@
 import { Text } from '@/components/ui/text';
 import { classify } from '@/utils/classify';
 import { Link, LinkProps } from 'expo-router';
-import { ComponentProps } from 'react';
-import { Pressable, View } from 'react-native';
+import { ComponentProps, PropsWithChildren } from 'react';
+import { Pressable } from 'react-native';
 
-interface Props extends ComponentProps<typeof View> {
+interface Props extends Omit<ComponentProps<typeof Pressable>, 'children'>, PropsWithChildren {
 	href?: LinkProps['href'];
 	className?: string;
 }
@@ -25,7 +25,7 @@ export function Button({ href, className, children, ...props }: Props) {
 
 	return (
 		<Pressable className={_className} {...props}>
-			<Text color='white' weight='bold' align='center'>
+			<Text size='2xl' color='white' weight='bold' align='center'>
 				{children}
 			</Text>
 		</Pressable>

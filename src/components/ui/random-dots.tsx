@@ -7,7 +7,7 @@ interface Props {
 
 export function RandomDots({ count = 20 }: Props) {
 	const colors = ['bg-primary', 'bg-secondary'];
-	const opacities = ['opacity-10', 'opacity-20', 'opacity-30', 'opacity-40', 'opacity-50'];
+	const opacities = ['opacity-10', 'opacity-20', 'opacity-30'];
 	const sizes = ['h-2 w-2', 'h-3 w-3', 'h-4 w-4'];
 	const minDistance = 4;
 	const dots: {
