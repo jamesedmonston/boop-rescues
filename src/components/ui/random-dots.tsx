@@ -6,6 +6,25 @@ interface Props {
 }
 
 export function RandomDots({ count = 20 }: Props) {
+	const dots = generateDots(count);
+
+	return dots.map((dot, i) => {
+		const className = classify(['absolute rounded-full', dot.size, dot.color, dot.opacity]);
+
+		return (
+			<View
+				className={className}
+				style={{
+					left: `${dot.left}%`,
+					top: `${dot.top}%`,
+				}}
+				key={i}
+			/>
+		);
+	});
+}
+
+function generateDots(count: number) {
 	const colors = ['bg-primary', 'bg-secondary'];
 	const opacities = ['opacity-10', 'opacity-20', 'opacity-30'];
 	const sizes = ['h-2 w-2', 'h-3 w-3', 'h-4 w-4'];
@@ -54,18 +73,5 @@ export function RandomDots({ count = 20 }: Props) {
 		}
 	}
 
-	return dots.map((dot, i) => {
-		const className = classify(['absolute rounded-full', dot.size, dot.color, dot.opacity]);
-
-		return (
-			<View
-				className={className}
-				style={{
-					left: `${dot.left}%`,
-					top: `${dot.top}%`,
-				}}
-				key={i}
-			/>
-		);
-	});
+	return dots;
 }
